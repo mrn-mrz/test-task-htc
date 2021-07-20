@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Видеосервис</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+    <form class="search">
+      <div>
+        <input type="search" class="form" placeholder="Поиск...">
+      </div>
+      <div>
+        <button type="submit" class="text search_btn">Найти</button>
+      </div>
+    </form>
+    <button class="login" id="login" >Войти</button>
+  </header>
+  <section class="nav">
+    <div class="tabs">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <button class="nav-link" id="movie-tab" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Фильмы</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link active" id="tv-tab" data-bs-toggle="tab"  type="button" role="tab" aria-selected="true">Телеканалы</button>
+        </li>
+      </ul>
+      <!-- <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+      </div> -->
+    </div>
+  </section>
+  <section class="tv_programme">
+      <div class="channel">
+        <img src="img/channel 1.svg" class="channel_logo" alt="channel-logo">
+        <div class="programme_list">
+          <h3 class="channel__heading">Первый канал</h3>
+          <ul class="programme_list">
+            <li class="list_element">
+              <time class="current_programme">13:00</time>
+              <p class="programme_text current_programme">Новости (с субтитрами)</p>
+            </li>
+            <li class="list_element">
+              <time>14:00</time>
+              <p class="programme_text">Давай поженимся</p>
+            </li>
+            <li class="list_element">
+              <time>15:00</time>
+              <p  class="programme_text">Другие новости</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="channel">
+        <img src="img/2x2.svg" class="channel_logo" alt="channel-logo">
+        <div class="programme_list">
+          <h3 class="channel__heading">2х2</h3>
+          <ul class="programme_list">
+            <li class="list_element">
+              <time class="current_programme">13:00</time>
+              <p class="programme_text current_programme">МУЛЬТ ТВ. Сезон 4, 7 серия</p>
+            </li>
+            <li class="list_element">
+              <time>14:00</time>
+              <p class="programme_text">ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия</p>
+            </li>
+            <li class="list_element">
+              <time>15:00</time>
+              <p class="programme_text">БУРДАШЕВ. Сезон 1, 20 серия</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="channel">
+        <img src="img/rbk.svg" class="channel_logo" alt="channel-logo">
+        <div class="programme_list">
+          <h3 class="channel__heading">РБК</h3>
+          <ul class="programme_list">
+            <li class="list_element">
+              <time class="current_programme">13:00</time>
+              <p class="programme_text current_programme">ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС</p>
+            </li>
+            <li class="list_element">
+              <time>14:00</time>
+              <p class="programme_text">ДЕНЬ. Главные темы</p>
+            </li>
+            <li class="list_element">
+              <time>15:00</time>
+              <p class="programme_text">Главные новости</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="channel">
+        <img src="img/amedia.svg" class="channel_logo" alt="channel-logo">
+        <div class="programme_list">
+          <h3 class="channel__heading">AMEDIA PREMIUM</h3>
+          <ul class="programme_list">
+            <li class="list_element">
+              <time class="current_programme">13:00</time>
+              <p class="programme_text current_programme">Клиент всегда мёртв</p>
+            </li>
+            <li class="list_element">
+              <time>14:00</time>
+              <p class="programme_text">Голодные игры: Сойка-пересмешница. Часть I</p>
+            </li>
+            <li class="list_element">
+              <time>15:00</time>
+              <p class="programme_text">Секс в большом городе</p>
+            </li>
+          </ul>
+        </div>
+      </div>  
+
+      <!-- <div class="channel">
+        <img src="img/channel 1.svg" class="channel_logo" alt="channel-logo">
+        <div >
+          <h3 class="channel__heading">Первый канал</h3>
+          <ul class="programme_list">
+            <li class="list_element">
+              <time class="current_programme">13:00</time>
+              <p class="programme_text current_programme">Новости (с субтитрами)</p>
+            </li>
+            <li class="list_element">
+              <time>14:00</time>
+              <p class="programme_text">Давай поженимся</p>
+            </li>
+            <li class="list_element">
+              <time>15:00</time>
+              <p  class="programme_text">Другие новости</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="channel">
+        <img src="img/2x2.svg" class="channel_logo" alt="channel-logo">
+        <div class="programme_list">
+          <h3 class="channel__heading">2х2</h3>
+          <ul class="programme_list">
+            <li class="list_element">
+              <time class="current_programme">13:00</time>
+              <p class="programme_text current_programme">МУЛЬТ ТВ. Сезон 4, 7 серия</p>
+            </li>
+            <li class="list_element">
+              <time>14:00</time>
+              <p class="programme_text">ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия</p>
+            </li>
+            <li class="list_element">
+              <time>15:00</time>
+              <p class="programme_text">БУРДАШЕВ. Сезон 1, 20 серия</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="channel">
+        <img src="img/rbk.svg" class="channel_logo" alt="channel-logo">
+        <div class="programme_list">
+          <h3 class="channel__heading">РБК</h3>
+          <ul class="programme_list">
+            <li class="list_element">
+              <time class="current_programme">13:00</time>
+              <p class="programme_text current_programme">ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС</p>
+            </li>
+            <li class="list_element">
+              <time>14:00</time>
+              <p class="programme_text">ДЕНЬ. Главные темы</p>
+            </li>
+            <li class="list_element">
+              <time>15:00</time>
+              <p class="programme_text">Главные новости</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="channel">
+        <img src="img/amedia.svg" class="channel_logo" alt="channel-logo">
+        <div class="programme_list">
+          <h3 class="channel__heading">AMEDIA PREMIUM</h3>
+          <ul class="programme_list">
+            <li class="list_element">
+              <time class="current_programme">13:00</time>
+              <p class="programme_text current_programme">Клиент всегда мёртв</p>
+            </li>
+            <li class="list_element">
+              <time>14:00</time>
+              <p class="programme_text">Голодные игры: Сойка-пересмешница. Часть I</p>
+            </li>
+            <li class="list_element">
+              <time>15:00</time>
+              <p class="programme_text">Секс в большом городе</p>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+  </section>
+  <footer class="footer">
+    <img src="img/htc-cs-logo.svg" width="32" height="64" alt="htc-cs-logo">
+    <div class="contacts">
+      <p class="text">426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла Маркса, 246 (ДК «Металлург»)</p>
+      <p class="text">+7 (3412) 93-88-61, 43-29-29</p>
+      <a href="htc-cs.ru" class="text htc-cs_link">htc-cs.ru</a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,176 @@
+body {
+  font-family: Rubik;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: #333333;
+  margin: 0px;
+}
+
+.header {
+  height: 36px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 32px;
+  margin-bottom: 48px;
+  padding-left: calc(50% - 720px);
+  padding-right: calc(50% - 720px);
+}
+
+.search {
+  display: flex;
+}
+
+.form {
+  width: 320px;
+  color: #828282;
+  appearance: none;
+  border: 0;
+  border-bottom: 1px solid #333333;
+  padding-bottom: 6px;
+  margin-right: 32px;
+}
+
+.search_btn {
+  font-size: 16px;
+  font-weight: 500;
+  color: #E5261E;
+  appearance: none;
+  border: 0;
+  background-color: transparent;
+}
+
+.login {
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFFFFF;
+  appearance: none;
+  border: 0;
+  border-radius: 4px;
+  background-color: #E5261E;
+  padding: 9px 32px;
+}
+
+.nav-tabs {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: none;
+}
+
+.nav-link {
+  font-size: 28px;
+  font-weight: 500;
+  color: #333333;
+  background-color: transparent;
+  border: none;
+}
+
+.nav-link.active {
+  font-size: 28px;
+  font-weight: 500;
+  color: #E5261E;
+  border-bottom: 2px #E5261E solid;
+  padding-bottom: 9px;
+}
+
+.tv_programme {
+  margin-top: 27px;
+  margin-bottom: 72px;
+  padding-left: calc(50% - 580px);
+  padding-right: calc(50% - 580px);
+}
+
+.tv_programme.scroll {
+  height: 696px;
+  width: 8px;
+  overflow: scroll;
+  overflow-x: hidden;
+  color: #BDBDBD;
+  border-radius: 2px;
+  
+}
+
+/* .tv_programme::-webkit-scrollbar {
+  width: 8px;
+  height: 696px;
+  background-color: #F2F2F2;
+}
+
+.tv_programme::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #BDBDBD;
+}
+
+.tv_programme::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #f9f9fd;
+} */
+
+.channel{
+  background-color: #F2F2F2;
+  display: flex;
+
+  width: 1180px;
+  height: 162px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+.channel_logo {
+  width: 114px;
+  height: 65px;
+  margin: 48px 143px 49px 143px;
+}
+
+.programme_list {
+  display: list-item;
+  list-style: none;
+  padding-left: 0;
+}
+
+
+
+.channel__heading {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 21px 500px 17px 0px;
+
+}
+
+.list_element {
+  display: flex;
+}
+
+.programme_text {
+  margin: 0px 24px 12px 16px;
+}
+
+.current_programme {
+  color: #E5261E;
+}
+
+.footer {
+  background-color: #F2F2F2;
+  background-size: 100%;
+  display: flex;
+  padding-top: 22px;
+  padding-bottom: 25px;
+  padding-left: calc(50% - 720px);
+  padding-right: calc(50% - 720px);
+}
+
+.contacts {
+  margin-left: 40px;
+  
+}
+
+.htc-cs_link {
+  font-weight: 500;
+  color: #1F4766;
+  text-decoration: none;
+  margin-top: 10px;
+}
