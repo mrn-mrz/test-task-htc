@@ -12,7 +12,7 @@
 </head>
 <body>
   <header class="header">
-    <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+    <a href="index.html"><img src="img/logo.svg" class="logo" alt="logo"></a>
     <form class="search">
       <div>
         <input type="search" class="form" placeholder="Поиск...">
@@ -25,7 +25,7 @@
   </header>
   <section class="nav">
     <div class="tabs">
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item">
           <button class="nav-link" id="movie-tab" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Фильмы</button>
         </li>
@@ -33,13 +33,9 @@
           <button class="nav-link active" id="tv-tab" data-bs-toggle="tab"  type="button" role="tab" aria-selected="true">Телеканалы</button>
         </li>
       </ul>
-      <!-- <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-      </div> -->
     </div>
   </section>
-  <section class="tv_programme">
+  <section class="tv_programme active">
       <div class="channel">
         <img src="img/channel 1.svg" class="channel_logo" alt="channel-logo">
         <div class="programme_list">
@@ -201,6 +197,60 @@
           </ul>
         </div>
       </div> -->
+  </section>
+  <section class="movies">
+    <h2 class="text movies_heading">🔥 Новинки</h2>
+    <div class="new">
+      <div class="movie">
+        <div class="movie_cover">
+          <img src="img/cat.jpg" alt="">
+          <p class="film_description"></p>
+        </div>
+        <h3 class="film_name">Мульт в кино. Выпуск №103. Некогда грустить!</h3>
+        <p class="film_description">
+      </div>
+      <div class="movie">
+        <div class="movie_cover">
+          <img src="img/batman.jpg" alt="">
+          <p class="film_description"></p>
+        </div>
+        <h3 class="film_name">Новый Бэтмен</h3>
+      </div>
+      <div class="movie">
+        <div class="movie_cover">
+          <img src="img/hoolywood.jpg" alt="">
+          <p class="film_description">Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.</p>
+        </div>
+        <h3 class="film_name">Однажды... в Голливуде</h3>
+      </div>
+      <div class="movie">
+        <div class="movie_cover">
+          <img src="img/strippers.jpg" alt="">
+          <p class="film_description"></p>
+        </div>
+        <h3 class="film_name">Стриптизёрши</h3>
+      </div>
+    </div>
+
+    <h2 class="movies_heading">Жанры</h2>
+    <div class="genres">
+      <div class="genre genre_1">
+        <p class="text genre_emoji">😁</p>
+        <h3 class="text genre_name">Комедии</h3>
+      </div>
+      <div class="genre genre_2">
+        <p class="text genre_emoji">😭</p>
+        <h3 class="genre_name">Драмы</h3>
+      </div>
+      <div class="genre genre_3">
+        <p class="genre_emoji">👽</p>
+        <h3 class="genre_name">Фантастика</h3>
+      </div>
+      <div class="genre genre_4">
+        <p class="genre_emoji">👻</p>
+        <h3 class="genre_name">Ужасы</h3>
+      </div>
+    </div>
   </section>
   <footer class="footer">
     <img src="img/htc-cs-logo.svg" width="32" height="64" alt="htc-cs-logo">
