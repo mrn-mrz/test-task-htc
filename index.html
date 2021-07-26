@@ -27,15 +27,15 @@
     <div class="tabs">
       <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item">
-          <button class="nav-link" id="movie-tab" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Фильмы</button>
+          <button class="nav-link" id="movies-tab" data-bs-toggle="tab" type="button" data-bs-target="#movies">Фильмы</button>
         </li>
         <li class="nav-item">
-          <button class="nav-link active" id="tv-tab" data-bs-toggle="tab"  type="button" role="tab" aria-selected="true">Телеканалы</button>
+          <button class="nav-link active" id="tv_programme-tab" data-bs-toggle="tab"  type="button" data-bs-target="#tv_programme">Телеканалы</button>
         </li>
       </ul>
     </div>
   </section>
-  <section class="tv_programme active">
+  <section class="tv_programme active" id="tv_programme">
       <div class="channel">
         <img src="img/channel 1.svg" class="channel_logo" alt="channel-logo">
         <div class="programme_list">
@@ -198,7 +198,7 @@
         </div>
       </div> -->
   </section>
-  <section class="movies">
+  <section class="movies" id="movies">
     <h2 class="text movies_heading">🔥 Новинки</h2>
     <div class="new">
       <div class="movie">
@@ -260,5 +260,6 @@
       <a href="htc-cs.ru" class="text htc-cs_link">htc-cs.ru</a>
     </div>
   </footer>
+  <script src='dist/bundle.js'></script>
 </body>
 </html>

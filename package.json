@@ -1,0 +1,29 @@
+{
+  "name": "test-task-htc",
+  "version": "1.0.0",
+  "description": "videohost",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "NODE_ENV='production' webpack",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrn-mrz/test-task-htc.git"
+  },
+  "author": "Mrn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrn-mrz/test-task-htc/issues"
+  },
+  "homepage": "https://github.com/mrn-mrz/test-task-htc#readme",
+  "devDependencies": {
+    "eslint": "^7.31.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^5.3.2"
+  }
+}
