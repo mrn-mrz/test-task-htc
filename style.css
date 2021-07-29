@@ -31,12 +31,28 @@ body {
 
 .form {
   width: 320px;
+  font-size: 16px;
+  font-weight: 400;
   color: #828282;
   appearance: none;
   border: 0;
   border-bottom: 1px solid #333333;
   padding-bottom: 6px;
   margin-right: 32px;
+  outline: none;
+}
+
+/* .form::-ms-clear {
+  display: none;
+} */
+
+.form:focus {
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+  outline: none;
+  border-bottom: 1px solid #333333;
 }
 
 .search_btn {
@@ -50,7 +66,44 @@ body {
   cursor: pointer;
 }
 
-.login {
+.autorized-user {
+  display: flex;
+  justify-content: flex-end;
+  line-height: 19px;
+  margin-top: 43px;
+
+}
+
+.user {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+  margin-right: 16px;
+}
+
+.logout-button {
+  display: none;
+}
+
+.logout-button.active {
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 500;
+  color: #E5261E;
+  appearance: none;
+  border: 0;
+  background-color: transparent;
+  display: block;
+  cursor: pointer;
+  height: 19px;
+  padding: 0;
+}
+
+.login-button {
+  display: none;
+}
+
+.login-button.active {
   font-family: Rubik;
   font-size: 16px;
   font-weight: 500;
@@ -62,10 +115,179 @@ body {
   padding: 9px 32px;
   cursor: pointer;
   margin-top: 34px;
+  display: block;
 }
 
-.login:hover {
+.login-button:hover {
   background-color: #CC221B;
+}
+
+
+
+.modal {
+  display: none;
+}
+
+/* .modal.show {
+  width: 232px;
+  height: 322px;
+  display: block;
+  justify-content: center;
+  background-color: #F2F2F2;
+  border-radius: 8px;
+  padding: 36px;
+
+  opacity: 0.6;
+  z-index: 1;
+} */
+
+.modal.show {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center; /* см. ниже */
+  align-items: center;
+  z-index: 99;
+  /* Чтобы окно не прилипало к границе
+  браузера установим отступы */
+  padding:30px 0;
+}
+
+.modal-content {
+  
+
+  /* Установим по умолчанию ширину 600px
+  но она будет не больше ширины браузера */
+  width: 232px;
+  height: 322px;
+  display: block;
+  justify-content: center;
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 36px;
+  max-width: 100%;
+
+  margin: 50px 0;
+  flex-shrink: 0;
+  flex-grow: 0;
+
+  overflow: visible;
+  transition: transform 0.2s ease 0s, opacity 0.2s ease 0s;
+  transform: scale(0.9);
+  opacity: 1;
+}
+
+.modal-dialog {
+  flex-shrink: 0;
+  flex-grow: 0;
+  width: 100%;
+  min-height: 100%;
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: fixed;
+  border:none;
+  display: block;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 98;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  background-color: #333333;
+}
+
+.overlay.show {
+  pointer-events: auto;
+  opacity: 0.6;
+}
+
+/* .hystmodal__opened {
+  position: fixed;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+} */
+
+.sign-up-title {
+  font-size: 28px;
+  font-weight: 500;
+  color: #333333;
+  text-align: center;
+  margin: 0 0 24px 0;
+}
+
+.sign-up__field {
+  width: 232px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #828282;
+  appearance: none;
+  border: none;
+  border-bottom: 1px solid #333333;
+  /* padding-bottom: 6px; */
+  margin-bottom: 24px;
+}
+
+.sign-up__field:focus {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+  outline: none;
+  border-bottom: 1px solid #333333;
+}
+
+.form-check-label {
+
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+
+}
+
+.form-check-input {
+  border-radius: 2px;
+  color: #E5261E;
+}
+
+.form-check-input:checked {
+  background: #E5261E;
+
+}
+
+.sign-up__btn {
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFFFFF;
+  appearance: none;
+  border: 0;
+  border-radius: 4px;
+  background-color: #E5261E;
+  padding: 9px 32px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 111px;
+}
+
+.sign-up__btn:hover {
+  border-color: #CC221B;
 }
 
 .nav-tabs {

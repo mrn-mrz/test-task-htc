@@ -20,6 +20,8 @@
   "homepage": "https://github.com/mrn-mrz/test-task-htc#readme",
   "devDependencies": {
     "eslint": "^7.31.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
   },

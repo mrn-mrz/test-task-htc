@@ -10,7 +10,7 @@ export default () => {
     const targetTabId = targetTab.dataset.bsTarget;
     const targetTabContent = document.querySelector(targetTabId);
 
-    const activeTab = document.querySelector('.active');
+    const activeTab = document.querySelector('.nav-link.active');
     const activeTabId = activeTab.dataset.bsTarget;
     const activeTabContent = document.querySelector(activeTabId);
 

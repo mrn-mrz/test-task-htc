@@ -21,8 +21,38 @@
         <button type="submit" class="text search_btn">Найти</button>
       </div>
     </form>
-    <button class="login" id="login" >Войти</button>
+    <div class="autorized-user">
+      <div class="user"></div>
+      <button class="logout-button" id="login" data-toggle="collapse">Выйти</button>
+    </div>
+
+    <button class="login-button" id="login" data-toggle="collapse">Войти</button>
+    
   </header>
+
+  <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel">Войти</h5>
+        </div>
+        <div class="modal-body">
+          <input id="sign-up-login" type="text" class="sign-up__field" name="login" placeholder="Логин" value=''>
+          <input id="sign-up-password" required="" type="password" class="sign-up__field" name="password" placeholder="Пароль">  
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="">
+            <label class="form-check-label">
+              Запомнить
+            </label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="sign-up__btn" id="login">Войти</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay"></div>
   <section class="nav">
     <div class="tabs">
       <ul class="nav nav-tabs" role="tablist">
