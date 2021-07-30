@@ -1,5 +1,5 @@
-import autorization from './autorization-init';
 import navTabs from './nav-tabs';
+import autorization from './autorization-init';
 
-autorization();
 navTabs();
+autorization();

@@ -3,6 +3,7 @@ const overlay = document.querySelector('.overlay');
 const loginBtn = document.querySelector('.login-button');
 const logoutBtn = document.querySelector('.logout-button');
 const input = document.getElementById('sign-up-login');
+const autorizedUser = document.querySelector('.autorized-user');
 const user = document.querySelector('.user');
 
 const state = {
@@ -31,9 +32,15 @@ const closeForm = () => {
   overlay.classList.remove('show');
 };
 
+const login = () => {
+  loginBtn.classList.remove('active');
+  autorizedUser.classList.add('active');
+};
+
 const logout = () => {
   loginBtn.classList.add('active');
   logoutBtn.classList.remove('active');
+  autorizedUser.classList.remove('active');
   localStorage.removeItem('login');
   state.login = localStorage.getItem('login');
   input.value = '';
@@ -68,12 +75,11 @@ export default () => {
     state.login = localStorage.getItem('login');
   });
 
-  const submitButton = document.querySelector('.sign-up__btn');
+  const submitButton = document.querySelector('.sign-up-btn');
 
   submitButton.addEventListener('click', (e) => {
     e.preventDefault();
-    loginBtn.classList.remove('active');
-    logoutBtn.classList.add('active');
+    login();
     render(state.login);
     closeForm();
   });

@@ -1,6 +1,7 @@
 body {
   font-family: Rubik;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .text {
@@ -40,6 +41,7 @@ body {
   padding-bottom: 6px;
   margin-right: 32px;
   outline: none;
+  justify-content: center;
 }
 
 .search_field:focus {
@@ -63,6 +65,10 @@ body {
 }
 
 .autorized-user {
+  display: none;
+}
+
+.autorized-user.active {
   display: flex;
   justify-content: flex-end;
   line-height: 19px;
@@ -120,19 +126,6 @@ body {
 .modal {
   display: none;
 }
-
-/* .modal.show {
-  width: 232px;
-  height: 322px;
-  display: block;
-  justify-content: center;
-  background-color: #F2F2F2;
-  border-radius: 8px;
-  padding: 36px;
-
-  opacity: 0.6;
-  z-index: 1;
-} */
 
 .modal.show {
   position: fixed;
