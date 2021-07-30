@@ -3,6 +3,7 @@ const overlay = document.querySelector('.overlay');
 const loginBtn = document.querySelector('.login-button');
 const logoutBtn = document.querySelector('.logout-button');
 const input = document.getElementById('sign-up-login');
+const password = document.getElementById('sign-up-password');
 const autorizedUser = document.querySelector('.autorized-user');
 const user = document.querySelector('.user');
 
@@ -30,6 +31,7 @@ const openForm = () => {
 const closeForm = () => {
   modal.classList.remove('show');
   overlay.classList.remove('show');
+  password.value = '';
 };
 
 const login = () => {
@@ -44,6 +46,7 @@ const logout = () => {
   localStorage.removeItem('login');
   state.login = localStorage.getItem('login');
   input.value = '';
+  password.value = '';
   render();
 };
 

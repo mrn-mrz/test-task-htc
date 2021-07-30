@@ -190,7 +190,6 @@ body {
   appearance: none;
   border: none;
   border-bottom: 1px solid #333333;
-  /* padding-bottom: 6px; */
   margin-bottom: 24px;
 }
 
@@ -238,7 +237,7 @@ body {
 .form-check-input:checked+label::before {
   border-color: #333333;
   background-color: transparent;
-  background-image: url(/img/Vector.svg);
+  background-image: url(https://mrn-mrz.github.io/test-task-htc/img/Vector.svg);
   background-size: 10px, 7.61px;
 }
 
