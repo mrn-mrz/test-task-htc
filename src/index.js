@@ -1,5 +1,5 @@
-import navTabs from './nav-tabs';
-import autorization from './autorization-init';
+import navTabs from './nav-tabs.js';
+import autorization from './autorization-init.js';
 
 navTabs();
 autorization();
