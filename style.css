@@ -245,8 +245,6 @@ body {
 .form-check-input:checked+label::before {
   border-color: #333333;
   background-color: transparent;
-
-
   background-image: url(/img/Vector.svg);
   background-size: 10px, 7.61px;
 }
