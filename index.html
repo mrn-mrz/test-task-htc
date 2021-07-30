@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf8mb4">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Видеосервис</title>
@@ -15,7 +15,7 @@
     <a href="index.html"><img src="img/logo.svg" class="logo" alt="logo"></a>
     <form class="search">
       <div>
-        <input type="search" class="form" placeholder="Поиск...">
+        <input type="search" class="search_field" placeholder="Поиск...">
       </div>
       <div>
         <button type="submit" class="text search_btn">Найти</button>
@@ -27,16 +27,13 @@
     </div>
     <button class="login-button" id="login" data-toggle="collapse">Войти</button>
   </header>
-
   <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
-          <h2 class="modal-title" id="exampleModalLabel">Войти</h5>
-        </div>
+        <h2 class="modal-title" id="exampleModalLabel">Войти</h5>
         <div class="modal-body">
-          <input id="sign-up-login" type="text" class="sign-up__field" name="login" placeholder="Логин" value=''>
-          <input id="sign-up-password" required="" type="password" class="sign-up__field" name="password" placeholder="Пароль">  
+          <input id="sign-up-login" type="text" class="sign-up-field" name="login" placeholder="Логин" value=''>
+          <input id="sign-up-password" required="" type="password" class="sign-up-field" name="password" placeholder="Пароль">  
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="">
             <label class="form-check-label">
@@ -45,7 +42,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button class="sign-up__btn" id="login">Войти</button>
+          <button class="sign-up-btn" id="login">Войти</button>
         </div>
       </div>
     </div>
@@ -65,7 +62,7 @@
   </section>
   <section class="tv_programme active" id="tv_programme">
     <div class="channels">
-      <div class="channel">
+      <div class="channel scrollbar">
         <img src="img/channel 1.svg" class="channel_logo" alt="channel-logo">
         <div class="programme_list">
           <h3 class="channel__heading">Первый канал</h3>
@@ -225,19 +222,19 @@
     <h2 class="movies_heading">Жанры</h2>
     <div class="genres">
       <div class="genre genre_1">
-        <p class="text genre_emoji">😁</p>
+        <p class="genre_emoji">&#128513;</p>
         <h3 class="text genre_name">Комедии</h3>
       </div>
       <div class="genre genre_2">
-        <p class="text genre_emoji">😭</p>
+        <p class="genre_emoji">&#128557;</p>
         <h3 class="genre_name">Драмы</h3>
       </div>
       <div class="genre genre_3">
-        <p class="genre_emoji">👽</p>
+        <p class="genre_emoji">&#128125;</p>
         <h3 class="genre_name">Фантастика</h3>
       </div>
       <div class="genre genre_4">
-        <p class="genre_emoji">👻</p>
+        <p class="genre_emoji">U+1F47B</p>
         <h3 class="genre_name">Ужасы</h3>
       </div>
     </div>

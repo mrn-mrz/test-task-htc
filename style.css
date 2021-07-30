@@ -12,12 +12,11 @@ body {
 }
 
 .header {
+  width: 1180px;
   display: flex;
   justify-content: space-between;
-  width: 1180px;
   padding-right: calc(50% - 580px);
   padding-left: calc(50% - 580px);
-  overflow: hidden;
 }
 
 .logo {
@@ -26,10 +25,11 @@ body {
 
 .search {
   display: flex;
+  justify-content: center;
   margin-top: 43px;
 }
 
-.form {
+.search_field {
   width: 320px;
   font-size: 16px;
   font-weight: 400;
@@ -42,7 +42,7 @@ body {
   outline: none;
 }
 
-.form:focus {
+.search_field:focus {
   font-family: Rubik;
   font-size: 16px;
   font-weight: 500;
@@ -181,30 +181,7 @@ body {
   justify-content: center;
 }
 
-.overlay {
-  position: fixed;
-  border: none;
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  overflow: hidden;
-  pointer-events: none;
-  z-index: 98;
-  opacity: 0;
-  transition: opacity 0.15s ease;
-  background-color: #333333;
-}
-
-.overlay.show {
-  pointer-events: auto;
-  opacity: 0.6;
-}
-
-.sign-up-title {
+.modal-title {
   font-size: 28px;
   font-weight: 500;
   color: #333333;
@@ -212,7 +189,7 @@ body {
   margin: 0 0 24px 0;
 }
 
-.sign-up__field {
+.sign-up-field {
   width: 232px;
   font-size: 16px;
   font-weight: 400;
@@ -224,7 +201,7 @@ body {
   margin-bottom: 24px;
 }
 
-.sign-up__field:focus {
+.sign-up-field:focus {
   font-size: 16px;
   font-weight: 500;
   color: #333333;
@@ -247,7 +224,13 @@ body {
   background: #E5261E;
 }
 
-.sign-up__btn {
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.sign-up-btn {
   font-family: Rubik;
   font-size: 16px;
   font-weight: 500;
@@ -260,10 +243,34 @@ body {
   cursor: pointer;
   text-align: center;
   margin-top: 111px;
+  position: relative;
 }
 
-.sign-up__btn:hover {
-  border-color: #CC221B;
+.sign-up-btn:hover {
+  background-color: #CC221B;
+}
+
+.overlay {
+  position: fixed;
+  border: none;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 98;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  background-color: #333333;
+}
+
+.overlay.show {
+  pointer-events: auto;
+  opacity: 0.6;
 }
 
 .nav-tabs {
@@ -315,6 +322,8 @@ body {
   overflow: auto;
   overflow-x: hidden;
   border-radius: 4px;
+  scrollbar-color: #BDBDBD, #F2F2F2;
+  scrollbar-width: 8px;
 }
 
 .channels::-webkit-scrollbar {
@@ -464,6 +473,7 @@ body {
 }
 
 .genre_emoji {
+  font-family: Rubik;
   line-height: 48px;
   font-size: 48px;
   text-align: center;
