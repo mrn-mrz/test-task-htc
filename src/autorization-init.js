@@ -53,6 +53,7 @@ const logout = () => {
 const changeUser = () => {
   openForm();
   user.value = state.login;
+  password.value = '';
 };
 
 export default () => {
