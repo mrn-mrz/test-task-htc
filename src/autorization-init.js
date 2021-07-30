@@ -6,6 +6,7 @@ const input = document.getElementById('sign-up-login');
 const password = document.getElementById('sign-up-password');
 const autorizedUser = document.querySelector('.autorized-user');
 const user = document.querySelector('.user');
+const search = document.querySelector('.search_btn');
 
 const state = {
   login: localStorage.getItem('login'),
@@ -98,5 +99,10 @@ export default () => {
   user.addEventListener('click', (e) => {
     e.preventDefault();
     changeUser();
+  });
+
+  search.addEventListener('click', (e) => {
+    e.preventDefault();
+    render();
   });
 };
